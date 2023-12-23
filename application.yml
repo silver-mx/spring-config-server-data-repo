@@ -1,0 +1,12 @@
+# Configure all instances to register themselved in Eurika for service discovery
+# and also fetch the register to cach it locally
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+config.test: Connected correctly to config server ...
