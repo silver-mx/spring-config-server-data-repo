@@ -1,0 +1,4 @@
+
+application:
+  jwt:
+    expiration: P1D # 1 day
