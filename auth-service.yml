@@ -1,9 +1,15 @@
-application:
-  jwt:
-    expiration: P1D # 1 day
+# For service discovery
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+
+application:
+  jwt:
+    expiration: P1D # 1 day
