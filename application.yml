@@ -9,4 +9,10 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 default.config.test: Connected correctly to config server ...

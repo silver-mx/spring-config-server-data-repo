@@ -1,4 +1,9 @@
-
 application:
   jwt:
     expiration: P1D # 1 day
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
